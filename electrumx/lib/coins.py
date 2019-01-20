@@ -2519,7 +2519,7 @@ class Mangacoin(Coin):
     TX_COUNT = 92049
     TX_COUNT_HEIGHT = 60000
     TX_PER_BLOCK = 0
-    RPC_PORT = 9402
+    RPC_PORT = 28400
     REORG_LIMIT = 1000
 
 
@@ -2536,6 +2536,6 @@ class MangacoinTestnet(Mangacoin):
     TX_COUNT = 1969
     TX_COUNT_HEIGHT = 1942
     TX_PER_BLOCK = 0
-    RPC_PORT = 19402
+    RPC_PORT = 28402
     REORG_LIMIT = 1000
     PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
