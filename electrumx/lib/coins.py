@@ -2523,7 +2523,7 @@ class Mangacoin(Coin):
     REORG_LIMIT = 1000
 
 
-class MangacoinTestnet(Monacoin):
+class MangacoinTestnet(Mangacoin):
     SHORTNAME = "XMG"
     NET = "testnet"
     XPUB_VERBYTES = bytes.fromhex("043587cf")
