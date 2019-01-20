@@ -2503,3 +2503,39 @@ class MyriadcoinTestnet(Myriadcoin):
     WIF_BYTE = bytes.fromhex("ef")
     GENESIS_HASH = ('0000017ce2a79c8bddafbbe47c004aa9'
                     '2b20678c354b34085f62b762084b9788')
+
+class Mangacoin(Coin):
+    NAME = "Mangacoin"
+    SHORTNAME = "MANGA"
+    NET = "mainnet"
+    XPUB_VERBYTES = bytes.fromhex("0488b21e")
+    XPRV_VERBYTES = bytes.fromhex("0488ade4")
+    P2PKH_VERBYTE = bytes.fromhex("6E")
+    P2SH_VERBYTES = [bytes.fromhex("61")]
+    WIF_BYTE = bytes.fromhex("B0")
+    GENESIS_HASH = ('e0b0b95cc209e17dd4280e3ab8302567'
+                    '83d89ef714accce540232da33e2b320a')
+    DESERIALIZER = lib_tx.DeserializerSegWit
+    TX_COUNT = 92049
+    TX_COUNT_HEIGHT = 60000
+    TX_PER_BLOCK = 0
+    RPC_PORT = 9402
+    REORG_LIMIT = 1000
+
+
+class MangacoinTestnet(Monacoin):
+    SHORTNAME = "XMG"
+    NET = "testnet"
+    XPUB_VERBYTES = bytes.fromhex("043587cf")
+    XPRV_VERBYTES = bytes.fromhex("04358394")
+    P2PKH_VERBYTE = bytes.fromhex("7F")
+    P2SH_VERBYTES = [bytes.fromhex("84")]
+    WIF_BYTE = bytes.fromhex("EF")
+    GENESIS_HASH = ('39c55d04ea8b5117abb84809c862a9d1'
+                    '7212bdae22115bef80f6a508f2a24ab6')
+    TX_COUNT = 1969
+    TX_COUNT_HEIGHT = 1942
+    TX_PER_BLOCK = 0
+    RPC_PORT = 19402
+    REORG_LIMIT = 1000
+    PEER_DEFAULT_PORTS = {'t': '51001', 's': '51002'}
